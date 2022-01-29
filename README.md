@@ -1,2 +1,2 @@
-# Compilacion_de_conocimientos
-Proyecto compilacion de conocimientos
+# Compilación_de_conocimientos
+Proyecto compilación de conocimientos
