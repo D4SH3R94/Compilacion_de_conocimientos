@@ -5,7 +5,7 @@ let d = Math.floor(Math.random() * 100);
 let e = Math.floor(Math.random() * 100);
 let f = Math.floor(Math.random() * 100);
 
-/* console.log(a,b,c,d,e,f); */
+console.log(a,b,c,d,e,f);
 
 let Michael = prompt("La variable A es mayor que 50?");
 let Miguel = prompt("La variable B es mayor que 50?");
@@ -25,60 +25,60 @@ const converTString = (h) =>{
 const chooseYouAnswer1= (i)=>{
     let booleanResponsive = converTString(i)
     if(booleanResponsive === true && a >= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Michael. Puedes ser amigo de Cofla!");
             document.write("Michael <br>");
             return true;
         }else if( booleanResponsive === false && a <= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Michael. Puedes ser amigo de Cofla!");
             document.write("Michael <br>");
             return true;
         }else{
-            alert("Es erroneo. Tu no puede ser amigo de Cofla!");
+            alert("Es erroneo Michael. Tu no puede ser amigo de Cofla!");
             return false;
         }
 }
 const chooseYouAnswer2= (i)=>{
     let booleanResponsive = converTString(i)
     if(booleanResponsive === true && b >= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Miguel. Puedes ser amigo de Cofla!");
             document.write("Miguel <br>");
             return true;
         }else if( booleanResponsive === false && b <= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Miguel. Puedes ser amigo de Cofla!");
             document.write("Miguel <br>");
             return true;
         }else{
-            alert("Es erroneo. Tu no puede ser amigo de Cofla!");
+            alert("Es erroneo Miguel. Tu no puede ser amigo de Cofla!");
             return false;
         }
 }
 const chooseYouAnswer3= (i)=>{
     let booleanResponsive = converTString(i)
     if(booleanResponsive === false && c >= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Jonh. Puedes ser amigo de Cofla!");
             document.write("Jonh <br>");
             return true;
         }else if( booleanResponsive === true && c <= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Jonh. Puedes ser amigo de Cofla!");
             document.write("Jonh <br>");
             return true;
         }else{
-            alert("Es erroneo. Tu no puede ser amigo de Cofla!");
+            alert("Es erroneo Jonh. Tu no puede ser amigo de Cofla!");
             return false;
         }
 }
 const chooseYouAnswer4= (i)=>{
     let booleanResponsive = converTString(i)
     if(booleanResponsive === false && d >= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Juan. Puedes ser amigo de Cofla!");
             document.write("Juan <br>");
             return true;
         }else if( booleanResponsive === true && d <= 50){
-            alert("Es correcto. Puedes ser amigo de Cofla!");
+            alert("Es correcto Juan. Puedes ser amigo de Cofla!");
             document.write("Juan <br>");
             return true;
         }else{
-            alert("Es erroneo. Tu no puede ser amigo de Cofla!");
+            alert("Es erroneo Juan. Tu no puede ser amigo de Cofla!");
             return false;
         }
 }
@@ -99,11 +99,11 @@ const definitionAnswerOfA = (j) =>{
 const chooseAnswerOfA = (k) =>{
     let booleanResponsiveA = definitionAnswerOfA(k);
     if(booleanResponsiveA === true){
-        alert("Es correcto. Puedes ser amigo de Cofla!");
+        alert("Es correcto Albert. Puedes ser amigo de Cofla!");
         document.write("Albert <br>");
         return true;
     }else if (booleanResponsiveA === false){
-        alert("Es incorrecto. Tu no puedes ser amigo de Cofla!");
+        alert("Es incorrecto Albert. Tu no puedes ser amigo de Cofla!");
         return false;
     }else{
         alert("Has tenido mala suerte. El amigo de Cofla es ALberto");
@@ -116,15 +116,15 @@ console.log(definitionAnswerOfA(Albert));
 const chooseAnswerOfA1 = (l) =>{
     let booleanResponsiveA1 = definitionAnswerOfA(l);
     if(booleanResponsiveA1 === undefined){
-        alert("Es correcto. Puedes ser amigo de Cofla!");
+        alert("Es correcto Alberto. Puedes ser amigo de Cofla!");
         document.write("Alberto <br>");
         return true;
     }else if(chooseAnswerOfA === 1){
-        alert("Es correcto. Puedes ser amigo de Cofla!");
+        alert("Es correcto Alberto. Puedes ser amigo de Cofla!");
         document.write("ALberto <br>");
         return true;
     }else{
-        alert("Es incorrecto. Tu no puedes ser amigo de Cofla!");
+        alert("Es incorrecto Alberto. Tu no puedes ser amigo de Cofla!");
         return false;
     }
 } 
@@ -135,13 +135,6 @@ chooseYouAnswer3(Jonh);
 chooseYouAnswer4(Juan);
 chooseAnswerOfA(Albert);
 chooseAnswerOfA1(Alberto);
-
-let michaelToError = chooseYouAnswer1(Michael);
-let miguelToError = chooseYouAnswer2(Miguel);
-let jonhToError = chooseYouAnswer3(Jonh);
-let juanToError = chooseYouAnswer4(Juan);
-let alberToError = chooseAnswerOfA(Albert);
-let albertoToError = chooseAnswerOfA1(Alberto);
 
 const randomName = (name1, name2) => {       
     let array = [name1, name2];
@@ -160,26 +153,36 @@ function enCaseOfErrorFor (case1, case2){
                     litleArray = ["Michael","Miguel"];
                     let random = Math.floor(Math.random() * litleArray.length);
                     const selectReal = litleArray[random];
-                    document.write(selectReal + "<br>"); 
+                    document.write(selectReal + "<br>");
+                    break; 
                 }
             }
         }else if((case1 == Jonh) && (case2 == Juan)){
             for(litleArray in grandArray){
-                if(litleArray >= 2, litleArray < 4){
+                if(litleArray >= 2, litleArray <= 3){
                     litleArray = ["Jonh","Juan"];
                     let random = Math.floor(Math.random() * litleArray.length);
                     const selectReal = litleArray[random];
                     document.write(selectReal + "<br>"); 
+                    break;
                 }
+            }
         }else if((case1 == Albert) && (case2 == Alberto)){
-
+            for(litleArray in grandArray){
+                if(litleArray >= 4, litleArray <= 6){
+                    litleArray = ["Albert","Alberto"];
+                    let random = Math.floor(Math.random() * litleArray.length);
+                    const selectReal = litleArray[random];
+                    document.write(selectReal + "<br>");
+                    break;
         }else{
-
+                document.write("No tenemos problemas");
         }
-    }
-    }
+        }
+        }
+        }
 }
 
-enCaseOfErrorFor(michaelToError, miguelToError);
-enCaseOfErrorFor(jonhToError, juanToError);
-enCaseOfErrorFor(alberToError, albertoToError);
+enCaseOfErrorFor(Michael, Miguel);
+enCaseOfErrorFor(Jonh, Juan);
+enCaseOfErrorFor(Albert, Alberto);
