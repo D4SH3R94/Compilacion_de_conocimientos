@@ -22,21 +22,8 @@ const converTString = (h) =>{
     }
 }
 
-const chooseYouAnswer1= (i)=>{
-    let booleanResponsive = converTString(i)
-    if(booleanResponsive === true && a >= 50){
-            alert("Es correcto Michael. Puedes ser amigo de Cofla!");
-            document.write("Michael <br>");
-            return true;
-        }else if( booleanResponsive === false && a <= 50){
-            alert("Es correcto Michael. Puedes ser amigo de Cofla!");
-            document.write("Michael <br>");
-            return true;
-        }else{
-            alert("Es erroneo Michael. Tu no puede ser amigo de Cofla!");
-            return false;
-        }
-}
+import { chooseYouAnswer1 } from "./funciones";
+
 const chooseYouAnswer2= (i)=>{
     let booleanResponsive = converTString(i)
     if(booleanResponsive === true && b >= 50){
@@ -183,6 +170,8 @@ function enCaseOfErrorFor (case1, case2){
         }
 }
 
+
 enCaseOfErrorFor(Michael, Miguel);
 enCaseOfErrorFor(Jonh, Juan);
 enCaseOfErrorFor(Albert, Alberto);
+
